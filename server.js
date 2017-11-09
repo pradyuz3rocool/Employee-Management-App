@@ -17,7 +17,7 @@ var upload = multer({storage: storage});
 
 var app = express();
 
-mongoose.connect('mongodb://admin:admin@jello.modulusmongo.net:27017/onY9ryra');
+mongoose.connect('mongodb://localhost:27017/ems');
 
 mongoose.connection.once('connected', function() {
 	console.log("Connected to database")
