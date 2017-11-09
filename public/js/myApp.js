@@ -141,6 +141,7 @@ angular.module('myApp', ['ngRoute','ngFileUpload'])
             });
         $scope.addEmployee = function() {
             var employee = {
+                empid: $scope.empId,
                 name : $scope.fName + " " + $scope.lName,
                 title : $scope.title,
                 sex   : $scope.sex,
